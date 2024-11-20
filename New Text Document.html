@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Effect Text Section</title>
+    <style>
+        /* Basic reset for padding and margins */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container with background image */
+        .container {
+            background-image: url('https://via.placeholder.com/800x400'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Blurred overlay */
+        .blurred-text-section {
+            background: rgba(255, 255, 255, 0.3); /* Light overlay background */
+            backdrop-filter: blur(10px); /* Blur effect */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text styling */
+        .blurred-text-section h1,
+        .blurred-text-section p {
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="blurred-text-section">
+        <h1>Blurred Text Section</h1>
+        <p>This is an example of a text section with a background blur effect. You can use this for a nice visual effect over an image.</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Style for the translate button */
+#translateButton {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 10px 20px;        /* Padding */
+  font-size: 16px;           /* Font size */
+  border: none;              /* No border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;          /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+#translateButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+        </style>
+        <title>
+            trial
+        </title>
+    </head>
+<body bgcolor="red">
+  <center>
+    <h1>This is a trial</h1>
+<!-- Button to trigger Google Translate -->
+<button id="translateButton">Translate</button>
+
+<!-- Container for Google Translate widget -->
+<div id="google_translate_element" style="display: none;"></div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  // Add event listener to show Google Translate widget on button click
+  document.getElementById('translateButton').addEventListener('click', function() {
+    var translateElement = document.getElementById('google_translate_element');
+    
+    // Toggle the visibility of the Google Translate widget
+    if (translateElement.style.display === 'none') {
+      translateElement.style.display = 'block';
+    } else {
+      translateElement.style.display = 'none';
+    }
+  });
+
+  // Prevent zooming on 'Ctrl + Mouse Wheel'
+  document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel'
+    }
+  }, { passive: false });
+</script>
+</center>
+</body>
+</html>

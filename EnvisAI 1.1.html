@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Hover Card</title>
+<style>
+  /* Style for the link */
+  .hover-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  /* Style for the card */
+  .hover-card {
+    display: none;
+    position: absolute;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  .hover-card p {
+    margin: 0;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Links with data-content attribute for dynamic content -->
+<a href="#" class="hover-link" data-content="This is a helpful description for Link 1" onmouseover="showCard(event)" onmouseout="hideCard()">Link 1</a>
+<a href="#" class="hover-link" data-content="Another useful description for Link 2" onmouseover="showCard(event)" onmouseout="hideCard()">Link 2</a>
+<a href="#" class="hover-link" data-content="Different information for Link 3" onmouseover="showCard(event)" onmouseout="hideCard()">Link 3</a>
+
+<!-- Hover card container -->
+<div class="hover-card" id="hoverCard">
+  <p id="hoverCardContent"></p>
+</div>
+
+<script>
+  const hoverCard = document.getElementById('hoverCard');
+  const hoverCardContent = document.getElementById('hoverCardContent');
+
+  function showCard(event) {
+    const link = event.target;
+    const content = link.getAttribute('data-content');
+
+    // Update the card content
+    hoverCardContent.textContent = content;
+
+    // Get the link's position and set the card's position
+    const rect = link.getBoundingClientRect();
+    hoverCard.style.top = `${rect.bottom + window.scrollY + 5}px`;
+    hoverCard.style.left = `${rect.left + window.scrollX}px`;
+
+    // Show the card
+    hoverCard.style.display = 'block';
+  }
+
+  function hideCard() {
+    hoverCard.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<button id="speakButton">Speak</button>
+<script>
+  const button = document.getElementById('speakButton');
+  const text = "This is a sample text to be spoken.";
+
+  button.addEventListener('click', () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+  });
+</script>

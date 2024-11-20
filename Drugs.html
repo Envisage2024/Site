@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+        
+            body{
+                background-image:url('drug abuse.jpeg');
+                background-repeat:no repeat;
+                background-attachment:fixed;
+                background-size:100% 100%
+                }  
+            </style>
+        <title> DRUGS </title>
+        <a href="Drugs 2.html"> Awareness </a>
+        </head>
+     <h1 style="color:tomato;"> <b>DRUGS </b> </h1>
+                <h2 style="color:tomato;"> WHAT IS A DRUG?</h2>
+           <p style="color:black;"> A drug is a substance when introduced to the body changes the normal body functioning</p>
+        <h2 style="color:tomato;"> TYPES OF DRUGS </h2>
+        <p style="color:tomato;"> <b> Essential Drugs </b> </p>
+        <p style="color:black;"><i> These are drugs that are given by medical doctors with clear prescription</i> </p>
+            <p style="color:tomato;"> They include; </p> 
+    <ul style="color:black;">
+                <li>Panadol</li>
+                <li>Candiderm</li>
+                <li> Deep heat</li>
+                <li> Vitamin & Hormonal supplements etc</li>
+                </ul>  
+        <p style="color:tomato;"> <b> Narcotic Drugs </b></p>
+        <p style="color:black;"><i> These are drugs that are harmful to the body when continouosly used.</i></p>
+        <p style="color: tomato;">These include: </p>
+    <ul style="color:black;">
+            <li> Marijuana</li>
+            <li>Opium</li>
+            <li> Cannabis</li>
+                <li> Jet fuel</li>
+                <li> Tobacco</li>
+                <li> Petroleum etc</li>
+                </ul>
+                <h2 style="color: tomato;"> <b> WHAT IS DRUG ABUSE?</b></h2>
+                <p style="color:black;"> Drug abuse is the illegal use of drugs in a way that is harmful to the body.The drugs normally abused are narcotic drugs.</p>
+                <h2 style="color: tomato;"> WHAT IS DRUG MISUSE ?</h2>
+                <p style="color:black;"> This is the improper use of drugs.</p>
+    <button id="speakButton">Speak</button>
+<script>
+  const button = document.getElementById('speakButton');
+  const text = "This is a sample text to be spoken.";
+
+  button.addEventListener('click', () => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+  });
+</script>
+    

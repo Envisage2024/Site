@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">     
+        <title> Technological Advances </title>
+        <link rel="icon" type="image/x-icon" href="Leaf 2.png">
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <link rel="stylesheet" type="text/css" href="bout.css">
+        <link rel="stylesheet" type="text/css" href="other.css">
+    </head>
+    <body class="main">
+             <nav class="navbar">
+               <nav class="dropdownmenu">
+                <div class="icon">
+                    <img class="image" src="Leaf 2.png">
+                </div>
+                <h2 class="logo">ENVISAGE</h2>
+                <div class="menu">
+                    <ul>
+                        <li><a href="INDEX.html">HOME</a></li>
+                        <li><a href="#">E-WASTE</a>
+                            <ul id="submenu">
+                                <a href="E-Waste.html">E-waste</a><br>
+                                <a href="Management.html">Management</a><br>
+                                <a href="Management 2.html">Stakeholders</a><br>
+                                <a href="Technological Advances.html">E-Facts</a>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">ABOUT US</a></li> 
+                        <li><a href="#">MORE</a>
+                          <ul id="submenu">
+                            <a href="Quiz.html">Quiz</a><br>
+                            <a href="Chat.html">EnviChat</a><br>
+                            <a href="pdfs.html">Download PDFs</a><br>
+                          </ul>
+                        </li>
+                        </ul>
+                </div>
+               </nav>
+               </nav>
+            </div>
+            <!-- <center>
+        <div class="content2">
+        <h1> Electronic<br><span>Facts</span></h1>
+        </div>
+        <center> -->
+                
+          <iframe style="width: 100%; height: 1000px; border: 10px;" src="E-facts (From Jael).html"></iframe>    
+<!-- chatbot:Envisage4 -->
+
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "IeZr4eSTBlm8T4mueI6A8",
+  domain: "www.chatbase.co" 
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="IeZr4eSTBlm8T4mueI6A8"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+  
+          <!-- TRANSLATOR -->
+<div id="translatorContainer" style="text-align: center; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  <!-- Button to trigger Google Translate -->
+  <button id="translateButton" style="margin-bottom: 5px;">Translate</button>
+
+  <!-- Container for Google Translate widget -->
+  <div id="google_translate_element" style="display: none;"></div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  // Add event listener to show Google Translate widget on button click
+  document.getElementById('translateButton').addEventListener('click', function() {
+    var translateElement = document.getElementById('google_translate_element');
+    
+    // Toggle the visibility of the Google Translate widget
+    if (translateElement.style.display === 'none') {
+      translateElement.style.display = 'block';
+    } else {
+      translateElement.style.display = 'none';
+    }
+  });
+
+  // Prevent zooming on 'Ctrl + Mouse Wheel'
+  document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel'
+    }
+  }, { passive: false });
+</script>
+<!-- END OF TRANSLATOR -->
+
+  <!-- Button to open Google Form -->
+  <button class="btn2" onclick="openModal()">Contact Us</button>
+  
+  <!-- Modal container -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKcF9DDl3FrstXUAIctckEKlUjOo3YFE31UET_WOtQx1uSUg/viewform?embedded=true" title="Googl forms"></iframe>
+    </div>
+  </div>
+  
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('formModal').style.display = 'flex';
+    }
+  
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('formModal').style.display = 'none';
+    }
+  
+    // Close modal if clicked outside of content
+    window.onclick = function(event) {
+      var modal = document.getElementById('formModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+ 
+
+              </body>
+  </html>

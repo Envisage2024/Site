@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown Arrow</title>
+    <style>
+        select {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            appearance: none; /* Removes default arrow */
+            -webkit-appearance: none; /* Removes default arrow in WebKit browsers */
+            -moz-appearance: none; /* Removes default arrow in Firefox */
+            background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22%3E%3Cpath d=%22M5 7l5 5 5-5%22 fill=%22none%22 stroke=%22%23000000%22 stroke-width=%222%22/%3E%3C/svg%3E'); /* Custom arrow */
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="fruits">Choose a fruit:</label>
+    <select id="fruits" name="fruits">
+      <option value="INDEX.html"><a href="INDEX.html">HOME</a></option>
+      <option value="orange">Orange</option>
+      <option value="banana">Banana</option>
+      <option value="grape">Grape</option>
+    </select>
+
+</body>
+</html>

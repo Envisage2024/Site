@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+         /* For small screens (e.g., mobile) */
+         @media screen and (max-width: 720px) {
+            body {
+                font-size: 16px; /* Adjust text size for smaller screens */
+                line-height: 1.5; /* Adjust line height for better readability */
+                margin: 0; /* Remove margins */
+                padding: 10px; /* Add some padding for mobile */
+            }
+
+            /* Adjust navbar layout for smaller screens */
+            .navbar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdownmenu {
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Adjust the logo size for mobile */
+            .logo {
+                font-size: 18px;
+                padding: 10px 0;
+            }
+
+            /* Adjust the menu for mobile */
+            .menu ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu ul li {
+                padding: 10px;
+                display: block;
+                text-align: center;
+            }
+
+            .menu ul li a {
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            /* Adjust content blocks for mobile */
+            .content2 h1 {
+                font-size: 22px;
+                line-height: 1.3;
+            }
+
+            .content-block p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            /* Additional content block adjustments */
+            .content-block2 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            /* Scale the page content */
+            body {
+                transform: scale(1);
+                transform-origin: 0 0; /* Scale from the top-left corner */
+            }
+
+            /* Limit the zoom-out by setting a minimum scale */
+            html {
+                min-width: 320px; /* Set a minimum width to prevent zooming out too far */
+            }
+         }
+
+         /* Styles for larger screens (default styles) */
+         body {
+            transform: scale(1);
+            transform-origin: 0 0;
+         }
+
+         html {
+            min-width: 320px;
+         }
+
+         /* Prevent zooming using the mouse wheel */
+         document.addEventListener('wheel', function(e) {
+            if (e.ctrlKey) {
+                e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel' }, { passive: false });}
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>Technological Advances</title>
+      <link rel="stylesheet" type="text/css" href="styling.css">
+      <link rel="stylesheet" type="text/css" href="bout.css">
+      <link rel="stylesheet" type="text/css" href="other.css">
+    </head>
+    <body class="main">
+        <nav class="navbar">
+            <div class="dropdownmenu">
+                <div class="icon">
+                    <img class="image" src="Leaf 2.png">
+                </div>
+                <h2 class="logo">ENVISAGE</h2>
+                <div class="menu">
+                    <ul>
+                        <li><a href="INDEX.html">HOME</a></li>
+                        <li><a href="#">E-WASTE</a>
+                            <ul id="submenu">
+                                <a href="E-Waste.html">E-waste</a><br>
+                                <a href="Management.html">Management</a>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content2">
+            <h1>Technological<br><span>Advances</span></h1>
+            <div class="content-block">
+                <p>Technological advancements are playing a crucial role in transforming e-waste management. Let's explore some of the innovative solutions that are reshaping how we handle electronic waste:</p>
+            </div>
+
+            <div class="content-block2">
+                <p>Blockchain Technology: Provides secure, transparent tracking of e-waste from collection to recycling, ensuring accountability and reducing fraud.</p>
+                <p>Sensor-Based Tracking: Tiny sensors in devices track type, location, and operational status, optimizing collection routes and recycling processes.</p>
+                <p>Advanced Recycling Technologies: Includes robotic disassembly, hydrometallurgical processes, and AI for improved efficiency in sorting and recovering valuable materials.</p>
+                <p>Data Analytics: Uses historical data and predictive analytics to optimize e-waste collection, recycling, and resource allocation.</p>
+                <p>Automated Sorting: Robotics, AI, and optical sorting systems improve speed and accuracy in separating materials for recycling.</p>
+                <p>Advanced Metal Recovery: Methods like bioleaching and electrochemical processes enable more efficient recovery of valuable metals with less environmental impact.</p>
+                <p>Pyrolysis and Thermal Processing: Technologies such as pyrolysis and plasma arc recycling recover energy and metals while minimizing toxic emissions.</p>
+                <p>Micro-Recycling: Small-scale, energy-efficient methods for processing specific e-waste types, including low-temperature microwave treatment for metals.</p>
+                <p>Blockchain & IoT for Traceability: Combined systems improve waste management, track e-waste, and ensure compliance with recycling standards.</p>
+                <p>Circular Economy Models: Product leasing, modular designs, and eco-designs encourage longevity, ease of repair, and better recyclability.</p>
+                <p>Chemical Recycling for Plastics: Techniques like depolymerization and solvent-based recovery allow better recycling of e-waste plastics.</p>
+                <p>Energy Recovery: Processes like pyrolysis and electrochemical systems convert waste materials into energy.</p>
+                <p>AI for Material Recovery: AI enhances material sorting and processing, increasing recovery rates and efficiency in recycling facilities.</p>
+                <p>Digital Product Passports & EPR: Digital systems track materials and recyclability, aiding compliance with Extended Producer Responsibility (EPR) regulations.</p>
+                <p>These innovations contribute to safer, more efficient, and sustainable e-waste recycling, reducing environmental impacts and promoting better product design.</p>
+            </div>
+        </div>
+    </body>
+</html>

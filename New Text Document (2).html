@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* Default layout (Desktop or larger screens) */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responsive-image {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Media query for average phone screens (width of 768px or smaller) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center; /* Optional: center text on smaller screens */
+  }
+
+  .responsive-image {
+    max-width: 100%;  /* Image takes up full width */
+    margin-top: 20px; /* Add some space between text and image */
+  }
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Image and Text</h1>
+    <p>This is some text that appears above the image.</p>
+    <img src="25.jpg" alt="A sample image" class="responsive-image">
+  </div>
+</body>
+</html>
+
+
+

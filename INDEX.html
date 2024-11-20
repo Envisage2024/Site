@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Envisage</title>
+    <link rel="icon" type="image/x-icon" href="Leaf 2.png">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+
+<body class="main">
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+         <nav class="navbar">
+           <div class="dropdownmenu">
+            <div class="icon">
+                <img class="image" src="Leaf 2.png">
+            </div>
+            <h2 class="logo">
+             ENVISAGE
+            </h2>
+            <div class="menu">
+                <ul>
+                    <li><a href="INDEX.html">HOME</a></li>
+                    <li><a href="#">E-WASTE</a>
+                        <ul id="submenu">
+                            <a href="E-Waste.html">E-waste</a><br>
+                            <a href="Management.html">Management</a><br>
+                            <a href="Management 2.html">Stakeholders</a><br>
+                            <a href="Technological Advances.html">E-Facts</a>
+                        </ul>
+                    </li>
+                    <ul>
+                    <li><a href="about.html">ABOUT US</a></li> 
+                    <li><a href="#">MORE</a>
+                      <ul id="submenu">
+                        <a href="Quiz.html">Quiz</a><br>
+                        <a href="Chat.html">EnviChat</a><br>
+                        <a href="pdfs.html">Download PDFs</a><br>
+                      </ul>
+                      </li>
+                </ul>
+            </div>
+          </nav>
+         </nav>
+        </div>
+        <div class="content">
+            <h1>SMALL STEPS,<br><span>BIG IMPACT</span></h1>
+            <p class="par">"E-waste management is not just a task,<br>
+                 it is a commitment to our planet's well-being."</p>
+            <button class="cn"><a href="E-Waste.html">Learn More</a></button>
+        </div>
+        <!-- <div class="content">
+        "Think you know your e-waste? Test your knowledge and see if you're a recycling<br>
+         pro or still have some learning to do! Take our quick quiz and discover how much you<br>
+         really know about e-waste and its impact on the environment."
+        </div> -->
+       <!-- chatbot:Envisage. -->
+        <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "-eF5go2QbtLWCxQaTXJYj",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="-eF5go2QbtLWCxQaTXJYj"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+                <!--/END OF CHATBOT/-->
+        <!-- <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "-eF5go2QbtLWCxQaTXJYj",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="-eF5go2QbtLWCxQaTXJYj"
+            domain="www.chatbase.co"
+            defer>
+            </script> -->
+</body> 
+<br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<!-- Button to open Google Form -->
+<button class="btn2" onclick="openModal()">Contact Us</button>
+
+<!-- Modal container -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKcF9DDl3FrstXUAIctckEKlUjOo3YFE31UET_WOtQx1uSUg/viewform?embedded=true" title="Googl forms"></iframe>
+  </div>
+</div>
+
+<script>
+  // Function to open the modal
+  function openModal() {
+    document.getElementById('formModal').style.display = 'flex';
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById('formModal').style.display = 'none';
+  }
+
+  // Close modal if clicked outside of content
+  window.onclick = function(event) {
+    var modal = document.getElementById('formModal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
+</script>
+<!-- <footer class="footer"> -->
+  <!-- Button to trigger Google Translate -->
+<button id="translateButton">Translate</button>
+
+<!-- Container for Google Translate widget -->
+<div id="google_translate_element" style="display: none;"></div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- </footer> -->
+<script>
+  // Add event listener to show Google Translate widget on button click
+  document.getElementById('translateButton').addEventListener('click', function() {
+    var translateElement = document.getElementById('google_translate_element');
+    
+    // Toggle the visibility of the Google Translate widget
+    if (translateElement.style.display === 'none') {
+      translateElement.style.display = 'block';
+    } else {
+      translateElement.style.display = 'none';
+    }
+  });
+</script>
+</center>
+<script>
+  // Prevent zooming on 'Ctrl + Mouse Wheel'
+  document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel'
+    }
+  }, { passive: false });
+</script>
+<label for="voiceSelect">Select Voice:</label>
+    <select id="voiceSelect"></select>
+
+    <button id="playBtn">PLAY SPEECH</button>
+    <p id="status"></p>
+
+    <script>
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance();
+        const fixedText = "SMALL STEPS, BIG IMPACT! E-waste management is not just a task, it is a commitment to our planet's well-being.";
+        let voices = [];
+
+        // Populate voice list and set default
+        function populateVoiceList() {
+            voices = synth.getVoices();
+            const voiceSelect = document.getElementById('voiceSelect');
+            voiceSelect.innerHTML = ''; // Clear previous options
+
+            voices.forEach((voice, index) => {
+                const option = document.createElement('option');
+                option.textContent = `${voice.name} (${voice.lang})`;
+                option.value = index;
+                voiceSelect.appendChild(option);
+            });
+
+            // Set the default voice
+            if (voices.length > 0) {
+                utterance.voice = voices[0];
+                document.getElementById('voiceSelect').value = 0;
+            }
+        }
+
+        // Ensure voices are populated on page load
+        populateVoiceList();
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = populateVoiceList;
+        }
+
+        // Play speech instantly on button click
+        function playSpeech() {
+            const status = document.getElementById('status');
+            const voiceSelect = document.getElementById('voiceSelect');
+
+            if (voices.length > 0) {
+                synth.cancel(); // Cancel any ongoing speech for instant playback
+                utterance.voice = voices[voiceSelect.value]; // Select the chosen voice
+                utterance.text = fixedText;
+                synth.speak(utterance); // Start speaking
+                status.textContent = "Playing speech...";
+            } else {
+                status.textContent = "Voices are still loading. Please wait...";
+            }
+        }
+
+        // Event listener for the play button
+        document.getElementById("playBtn").addEventListener("click", playSpeech);
+
+        // Preload the voice list on page load for faster performance
+        if (voices.length === 0) {
+            populateVoiceList();
+        }
+    </script>
+
+</html>
