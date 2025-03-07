@@ -1,0 +1,211 @@
+/* .sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0b3d04;
+    overflow-x: hidden;
+    transition: all 0.3s;
+    padding-top: 20px;
+    z-index: 1001;
+    font-family: Arial;
+}
+
+.sidenav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #7edd52;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #034203;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.open-btn p{
+    display: none;
+}
+.open-btn:hover{
+    background-color: #7edd52;
+}
+@media (max-width:767px) {
+    .open-btn p{
+        display: inline;
+    }
+} */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0f3304;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1001;
+}
+
+.side-nav a {
+    font-family: Arial;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #f1f1f1;
+}
+
+.side-nav.open {
+    width: 250px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #f1f1f1;
+}
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #034203;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.menu-icon p{
+    display: none;
+}
+@media (max-width:767px) {
+    .menu-icon p{
+        display: inline;
+    }
+}
+
+/*TRANSLATOR*/
+/* Center the widget in the middle of the page */
+.translate-widget {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers the widget */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Styling the container that wraps the label and dropdown */
+  #google_translate_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items in the column */
+    gap: 10px; /* Space between elements */
+  }
+  
+  /* Styling for the "Select Language" label */
+  #google_translate_element > *:not(.goog-te-combo) {
+    background-color: #188d00; /* Light peach background */
+    border-radius: 8px;
+    font-weight: bold;
+    color: #188d00; /* White text for better contrast */
+    font-size: 16px;
+    padding: 5px 10px;
+    width: 224px;
+    text-align: center;
+  }
+  
+  /* Styling for the dropdown */
+  .goog-te-combo {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #9ace9e; /* White background for dropdown */
+    color: #0e0e0e; /* Neutral text color */
+    display: block;
+    margin: 0 auto; /* Centers the dropdown */
+    font-weight: bold;
+  }
+  
+  /* Hover effect for dropdown */
+  .goog-te-combo:hover {
+    border-color: #007bff; /* Highlight border color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Centering the Translate Button */
+  #translateButton {
+    display: block;
+    margin: 10px auto; /* Centers button */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button Hover Effect */
+  #translateButton:hover {
+    background-color: #0056b3;
+  }
+
+/* Hide "Powered by Google Translate" */
+.goog-te-gadget span,
+.goog-te-gadget-simple span,
+.goog-te-gadget-simple:after,
+.goog-te-gadget:after {
+  display: none !important;
+}
+
+/* Hide Google branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+/* Hide Google Translate frame (if it appears) */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+  
+  

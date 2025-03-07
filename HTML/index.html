@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Envisage</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Leaf 2.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/styling.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bout.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sidenav.css">
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .image{
+        height: 50px;
+        width: 50px;
+        float: left;
+        padding-top: 10px;
+    }    
+
+    .main{
+        width: 100vw;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)60%, rgba(0,0,0,0.5)60%),url(../Images/bgpic.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed; 
+        height: 90vh;
+    } 
+    .navbar{
+        width: 100%;
+        height: 65px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icon{
+        width: 5px;
+        height: 5px;
+        float: left;
+    }
+    .logo{
+        color: #2EAF7D;
+        font-size: 20px;
+        font-family: Arial;
+        padding-left: 45px;
+        padding-top: 23px;
+    }
+    .menu{
+        width: auto;
+        height: 70px;
+        padding-right: 75px;
+    }
+    ul{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    ul li{
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 27px;
+        font-size: 14px; 
+    } 
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+    ul li a:hover{
+        color: #2EAF7D;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        background: #2EAF7D;
+        border: 2px solid #2EAF7D;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 15px;
+        border-bottom-right-radius: 5px;   
+    }
+    .btn:focus{
+        outline: none;
+    } 
+    .btn2{
+        width: 100px;
+        height: 40px;
+        background: #2EAF7D;
+        border: 2px solid #2EAF7D;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 5px; 
+        position: fixed; 
+        float: left;
+        bottom: 10px; 
+        left: 20px;
+    }
+    .btn2 a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .btn2:hover{
+        width: 120px;
+        height: 60px;
+        background: #2a5847;
+        border: 2px solid #2a5847;
+        margin-top: 13px;
+        color: #fff;
+        font-size: 17px;
+        border-radius: 5px; 
+        position: fixed; 
+        float: left;
+        bottom: 10px; 
+        left: 20px;
+        transition: all 1s;
+    }
+
+    .content{
+        width: 100%;
+        color:#fff;
+    }
+    .content .par{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+    .content .parac{
+        font-size: 30px;
+        color: #fff;
+    }
+    .content h1{
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+    }
+    .content .cn{
+        width: 160px;
+        height: 40px;
+        background: #2EAF7D;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer
+    }
+    .content .cn a{
+        text-decoration: none;
+        color: black;
+        transition: 3s ease;
+    }
+    .cn:hover{
+        background-color: #fff;
+        transform: translatey(-10px);
+        transition: all 3s;
+    }
+    .content span{
+        color: #2EAF7D;
+        font-size: 2em;   
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .menu {
+            padding-right: 15px;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        ul li {
+            margin-left: 0;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            margin-top: 10%;
+        }
+
+        .value {
+            width: 220px;
+            height: 320px;
+            left: 10px;
+            top: 10px;
+        }
+
+        #submenu a {
+            padding: 10px;
+        }
+
+        .footer {
+            font-size: 14px;
+            height: 60px;
+        }
+
+        .dropdownmenu ul li a {
+            padding: 12px 15px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        ul li {
+            font-size: 14px;
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+
+        .content h1 {
+            font-size: 35px;
+        }
+
+        .value {
+            width: 180px;
+            height: 250px;
+            left: 5px;
+        }
+
+        .footer {
+            font-size: 12px;
+            height: 50px;
+        }
+
+        .dropdownmenu ul li a {
+            padding: 10px 12px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        ul li {
+            font-size: 12px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        .content h1 {
+            font-size: 30px;
+        }
+
+        .btn {
+            width: 70px;
+            height: 25px;
+            font-size: 10px;
+        }
+
+        .value {
+            width: 150px;
+            height: 220px;
+        }
+
+        .footer {
+            font-size: 10px;
+            height: 40px;
+        }
+
+        .dropdownmenu ul li a {
+            padding: 8px 10px;
+        }
+    }
+    </style>
+</head>
+<body class="main">
+    <!-- SIDENAV -->
+    <!-- <div class="sidenav" id="mySidenav">
+      <span class="close-btn" onclick="toggleNav()">&times;</span>
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <a href="E-Waste.html">E-waste</a>
+      <a href="Management.html">E-waste Management</a>
+      <a href="Management 2.html">Stakeholders</a>
+      <a href="E-facts.html">E-facts</a>
+      <a href="Quiz.html">Quiz</a>
+      <a href="Chat.html">Envichat</a>
+      <a href="PDFs.html">Download PDFs</a>
+      <a href="Nearby dumping sites.html">Dumping Sites</a>
+  </div> -->
+  <div id="sideNav" class="side-nav">
+    <span class="close-btn" onclick="toggleNav()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="E-Waste.html">E-waste</a>
+    <a href="Management.html">E-waste Management</a>
+    <a href="Management 2.html">Stakeholders</a>
+    <a href="E-facts.html">E-facts</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="Chat.html">Envichat</a>
+    <a href="PDFs.html">Download PDFs</a>
+    <a href="Nearby dumping sites.html">Dumping Sites</a>
+</div>
+
+  
+  <script src="../JS/sidenav.js"></script> 
+           <nav class="navbar">
+              <div id="div">
+              <div class="icon">
+                  <img class="image" src="../Images/Leaf 2.png">
+              </div>
+              <h2 class="logo">ENVISAGE</h2>
+              </div>
+
+             <button class="menu-icon" onclick="toggleNav()">&#9776;<p>Open Sidebar</p></div>
+          </nav>
+          
+  
+          <div class="content">
+              <h1>SMALL STEPS,<br><span>BIG IMPACT</span></h1>
+              <p class="par">"E-waste management is not just a task,<br>
+                   it is a commitment to our planet's well-being."</p>
+              <button class="cn"><a href="E-Waste.html">Learn More</a></button>
+          </div>
+          <script>
+          window.embeddedChatbotConfig = {
+          chatbotId: "-eF5go2QbtLWCxQaTXJYj",
+          domain: "www.chatbase.co"
+          }
+          </script>
+          <script
+          src="https://www.chatbase.co/embed.min.js"
+          chatbotId="-eF5go2QbtLWCxQaTXJYj"
+          domain="www.chatbase.co"
+          defer>
+          </script>
+  </body> 
+  <br><br><br><br><br>
+  <center>
+  <!-- Button to open Google Form -->
+  <button class="btn2" onclick="openModal()">Contact Us</button>
+  
+  <!-- Modal container -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKcF9DDl3FrstXUAIctckEKlUjOo3YFE31UET_WOtQx1uSUg/viewform?embedded=true" title="Googl forms"></iframe>
+    </div>
+  </div>
+  
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('formModal').style.display = 'flex';
+    }
+  
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('formModal').style.display = 'none';
+    }
+  
+    // Close modal if clicked outside of content
+    window.onclick = function(event) {
+      var modal = document.getElementById('formModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+  <!-- <footer class="footer"> -->
+    <!-- Button to trigger Google Translate -->
+  <button id="translateButton">Translate</button>
+  
+  <!-- Container for Google Translate widget -->
+  <div id="google_translate_element" class="translate-widget" style="display: none;"></div>
+  
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en'
+      }, 'google_translate_element');
+    }
+  </script>
+  
+  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- </footer> -->
+  <script>
+    // Add event listener to show Google Translate widget on button click
+    document.getElementById('translateButton').addEventListener('click', function() {
+      var translateElement = document.getElementById('google_translate_element');
+      
+      // Toggle the visibility of the Google Translate widget
+      if (translateElement.style.display === 'none') {
+        translateElement.style.display = 'block';
+      } else {
+        translateElement.style.display = 'none';
+      }
+    });
+  </script>
+  </center>
+<br>
+  <script>
+    // Prevent zooming on 'Ctrl + Mouse Wheel'
+    document.addEventListener('wheel', function(e) {
+      if (e.ctrlKey) {
+        e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel'
+      }
+    }, { passive: false });
+  </script>
+  </html>

@@ -1,0 +1,236 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fallback color */
+    background-image: url(../Images/bgpic.jpeg); /* Path to your background image */
+    background-size: cover; /* Makes the image cover the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for the cards */
+.ewaste-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 cards per row */
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Add slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.ewaste-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.ewaste-card:hover {
+    transform: translateY(-10px); /* Hover lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.ewaste-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Overlay info box */
+.ewaste-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.ewaste-card:hover .ewaste-info {
+    opacity: 1;
+}
+
+.ewaste-card:hover .ewaste-image {
+    opacity: 0.4;  /* Fade out the image on hover */
+}
+
+/* Headings for the card overlay */
+.ewaste-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Paragraphs for the card overlay */
+.ewaste-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Link button styling */
+.ewaste-link {
+    font-size: 14px;
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ewaste-link:hover {
+    background-color: #218838;
+}
+.hid{
+    background-color: #28a745;
+    margin: 30px 10px 10px 10px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #f4f4f4;
+    display: none;
+}
+@media (max-width:895px) {
+    .hid{
+        display: block;
+    }
+    .body {
+        width: 100%;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+    
+    /* Container for the cards */
+    .ewaste-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  /* 3 cards per row */
+        gap: 20px;
+        padding: 20px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.1); /* Add slight transparency */
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Card styling */
+    .ewaste-card {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .ewaste-card:hover {
+        transform: translateY(-10px); /* Hover lift effect */
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Image styling */
+    .ewaste-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    /* Overlay info box */
+    .ewaste-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        opacity: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 15px;
+    }
+    
+    .ewaste-card:hover .ewaste-info {
+        opacity: 1;
+    }
+    
+    .ewaste-card:hover .ewaste-image {
+        opacity: 0.4;  /* Fade out the image on hover */
+    }
+    
+    /* Headings for the card overlay */
+    .ewaste-info h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    /* Paragraphs for the card overlay */
+    .ewaste-info p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    /* Link button styling */
+    .ewaste-link {
+        font-size: 14px;
+        color: #fff;
+        background-color: #28a745;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .ewaste-link:hover {
+        background-color: #218838;
+    }
+}

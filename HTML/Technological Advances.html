@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Facts - Envisage</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Leaf 2.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/styling.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/bout.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/sidenav.css">
+</head>
+<body class="main">
+  <!--NAVIGATION-->
+  <!-- SIDENAV -->
+  <div id="sideNav" class="side-nav">
+    <span class="close-btn" onclick="toggleNav()">&times;</span>
+    <a href="index.html">Home</a>
+    <a href="About.html">About Us</a>
+    <a href="E-Waste.html">E-waste</a>
+    <a href="Management.html">E-waste Management</a>
+    <a href="Management 2.html">Stakeholders</a>
+    <a href="E-facts.html">E-facts</a>
+    <a href="Quiz.html">Quiz</a>
+    <a href="Chat.html">Envichat</a>
+    <a href="PDFs.html">Download PDFs</a>
+    <a href="Nearby dumping sites.html">Dumping Sites</a>
+</div>
+
+  
+  <script src="../JS/sidenav.js"></script> 
+           <nav class="navbar">
+              <div id="div">
+              <div class="icon">
+                  <img class="image" src="../Images/Leaf 2.png">
+              </div>
+              <h2 class="logo">ENVISAGE</h2>
+              </div>
+
+             <button class="menu-icon" onclick="toggleNav()">&#9776;<p>Open Sidebar</p></div>
+          </nav>
+
+            <!-- <center>
+        <div class="content2">
+        <h1> Electronic<br><span>Facts</span></h1>
+        </div>
+        <center> -->
+                
+
+<!-- chatbot:Envisage4 -->
+
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "IeZr4eSTBlm8T4mueI6A8",
+  domain: "www.chatbase.co" 
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="IeZr4eSTBlm8T4mueI6A8"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+  
+          <!-- TRANSLATOR -->
+<div id="translatorContainer" style="text-align: center; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  <!-- Button to trigger Google Translate -->
+  <button id="translateButton" style="margin-bottom: 5px;">Translate</button>
+
+  <!-- Container for Google Translate widget -->
+  <div id="google_translate_element" class="translate-widget" style="display: none;"></div>
+</div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  // Add event listener to show Google Translate widget on button click
+  document.getElementById('translateButton').addEventListener('click', function() {
+    var translateElement = document.getElementById('google_translate_element');
+    
+    // Toggle the visibility of the Google Translate widget
+    if (translateElement.style.display === 'none') {
+      translateElement.style.display = 'block';
+    } else {
+      translateElement.style.display = 'none';
+    }
+  });
+
+  // Prevent zooming on 'Ctrl + Mouse Wheel'
+  document.addEventListener('wheel', function(e) {
+    if (e.ctrlKey) {
+      e.preventDefault(); // Prevent zooming when pressing 'Ctrl + Mouse Wheel'
+    }
+  }, { passive: false });
+</script>
+<!-- END OF TRANSLATOR -->
+
+  <!-- Button to open Google Form -->
+  <button class="btn2" onclick="openModal()">Contact Us</button>
+  
+  <!-- Modal container -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKcF9DDl3FrstXUAIctckEKlUjOo3YFE31UET_WOtQx1uSUg/viewform?embedded=true" title="Googl forms"></iframe>
+    </div>
+  </div>
+  
+  <script>
+    // Function to open the modal
+    function openModal() {
+      document.getElementById('formModal').style.display = 'flex';
+    }
+  
+    // Function to close the modal
+    function closeModal() {
+      document.getElementById('formModal').style.display = 'none';
+    }
+  
+    // Close modal if clicked outside of content
+    window.onclick = function(event) {
+      var modal = document.getElementById('formModal');
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+ 
+
+              </body>
+  </html>
